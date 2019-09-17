@@ -15,7 +15,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(features={"src//test//java//features"}
 					,glue={"stepdefinations","utility"}
-					,plugin = {"pretty", "html:target/cucumber"}
+					,plugin = {"pretty", "html:target/cucumber","json:target/cucumber/Cucumber.json"}
 					, tags ={"@web"}
 		)
 @Test
