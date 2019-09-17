@@ -93,6 +93,7 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>TestSuite/TestNG.xml</suiteXmlFile>
 					</suiteXmlFiles>
+<useSystemClassLoader>false</useSystemClassLoader>
 				</configuration>
 			</plugin>
 		</plugins>
