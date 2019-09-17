@@ -26,7 +26,7 @@ public class Hook {
 
 	private static WebDriver driver;
 	
-	@Before("@web")
+	//@Before("@web")
 	public void setUp()
 	{
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver");
@@ -35,7 +35,7 @@ public class Hook {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
-	@Before("@appium")
+	//@Before("@appium")
 	public void setUpAppium() throws MalformedURLException
 	{
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -46,7 +46,7 @@ public class Hook {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
-	@After
+	//@After
 	public void tearDown()
 	{
 		driver.quit();
