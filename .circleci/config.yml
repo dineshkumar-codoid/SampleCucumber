@@ -18,10 +18,13 @@ jobs:
             - ~/.m2
           key: dinesh_repo-{{ checksum "pom.xml" }}
       - run: mvn compile test
+      - store-artifacts:
+          path: target/cucumber
+          destination: rs
       - store_test_results:
           path: target/cucumber
       - run: cd target/cucumber
       - run: pwd
-      - run: ls target/
       - run: ls target/cucumber/
       - run: ls target/cucumber
+      - run: ls rs
