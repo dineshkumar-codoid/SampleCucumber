@@ -20,3 +20,5 @@ jobs:
       - run: mvn compile test
       - store_test_results:
           path: target/cucumber
+      - run: cd target/cucumber
+      - run: ls
