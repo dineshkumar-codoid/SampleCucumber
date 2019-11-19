@@ -28,9 +28,9 @@ jobs:
           command: |
             cd target/cucumber
             pwd
-            ls target/cucumber/
-            ls target/cucumber
-            ls rs
+#            ls target/cucumber/
+#            ls target/cucumber
+#            ls rs
       - attach_workspace:
           at: ~/dinesh_repo/second_repo/
       - add_ssh_keys:
