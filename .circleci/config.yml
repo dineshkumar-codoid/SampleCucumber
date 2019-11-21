@@ -25,9 +25,9 @@ jobs:
           path: target/cucumber
       - run: 
           name: Check test reports
-          command: |
-            cd target/cucumber
-            ${PWD}
+#          command: |
+#            cd target/cucumber
+#            ${PWD}
       - attach_workspace:
           at: ~/dinesh_repo/second_repo/
       - add_ssh_keys:
