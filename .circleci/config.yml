@@ -41,8 +41,10 @@ jobs:
             git clone git@github.com:dineshkumar-codoid/SampleTest.git second_repo
             ls
             echo "DK"
-            $PWD
-            echo "KD"
+            echo $KD_KD
+            echo "evvvv"
+            echo "pwd comand" $PWD
+            echo "KD1"
             ${PWD}
             cd second_repo
             ls
