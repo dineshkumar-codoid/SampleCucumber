@@ -28,9 +28,6 @@ jobs:
           command: |
             cd target/cucumber
             ${PWD}
-#            ls target/cucumber/
-#            ls target/cucumber
-#            ls rs
       - attach_workspace:
           at: ~/dinesh_repo/second_repo/
       - add_ssh_keys:
@@ -47,7 +44,6 @@ jobs:
             cd second_repo
             ls
             ${PWD}
-          command: |
             echo "Dinesh" 
             echo ${PWD}
             echo "Kumar" ${PWD}
